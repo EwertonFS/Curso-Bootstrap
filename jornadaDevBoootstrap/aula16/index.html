@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibilidade</title>
+    <link
+    rel="stylesheet"
+    href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+  />
+</head>
+<!-- na aula 15 de html e css ele mais sobre od tipos de display -->
+<style>
+
+    .border{
+        height: 150px;
+    }
+</style>
+<body>
+    
+  <!--   <div class="p-5 bg-danger"></div>
+    <div class="p-4 col-3 d-none d-lg-block m-3 bg-primary"></div>
+    <div class="p-4 col-3 d-block d-lg-none m-3 bg-success"></div>
+    <div class="p-4 col-3 d-inline-block m-3 bg-warning"></div> -->
+
+ <!--    Para ocultar visualização impressão de paginas: -->
+  <!--   d-print-none -->
+  <!-- d-none , ela pode ocupar espaço de outro elemento -->
+  <!-- invisible ela não ocupa o espaço -->
+
+    <header class="p-3 text-bg-dark d-print-none">
+        <div class="container">
+            <h1 class="display-1">
+                Cabeçalho
+            </h1>
+        </div>
+    </header>
+    <!-- article.container.my-3>h1.mb-4{Título do Artigo}+(p*4) -->
+    <article class="container my-3">
+        <h1 class="mb-4">Título do Artigo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae nostrum, dolore similique enim vero eos dignissimos ipsum praesentium rem earum nihil alias nobis molestias totam sequi amet? Porro, doloremque deleniti!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae nostrum, dolore similique enim vero eos dignissimos ipsum praesentium rem earum nihil alias nobis molestias totam sequi amet? Porro, doloremque deleniti!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae nostrum, dolore similique enim vero eos dignissimos ipsum praesentium rem earum nihil alias nobis molestias totam sequi amet? Porro, doloremque deleniti!</p>
+        <p class="d-print-none d-none">Fonte: Meu.site.com.br</p>
+    </article>
+    <!-- div.p-4.col-3.m-3.bg-primary*3 -->
+    <div class="p-4 col-3 m-3 bg-primary"></div>
+    <div class="p-4 col-3 m-3 bg-success invisible"></div>
+    <div class="p-4 col-3 m-3 bg-warning"></div>
+
+    <div class="container bg-info mt-3">
+        <!-- div.row>div.border.p2.col3*4 -->
+        <div class="row">
+            <div class="border p-2 col-3 overflow-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quibusdam odit maiores praesentium voluptas distinctio id illum, facere, cumque sed architecto sequi perspiciatis corrupti error deserunt cum libero, asperiores tempora.</div>
+            <div class="border p-2 col-3 overflow-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quibusdam odit maiores praesentium voluptas distinctio id illum, facere, cumque sed architecto sequi perspiciatis corrupti error deserunt cum libero, asperiores tempora.</div>
+            <div class="border p-2 col-3 overflow-visible">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quibusdam odit maiores praesentium voluptas distinctio id illum, facere, cumque sed architecto sequi perspiciatis corrupti error deserunt cum libero, asperiores tempora.</div>
+            <div class="border p-2 col-3 overflow-scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quibusdam odit maiores praesentium voluptas distinctio id illum, facere, cumque sed architecto sequi perspiciatis corrupti error deserunt cum libero, asperiores tempora.</div>
+        </div>
+    </div>
+</body>
+</html>-

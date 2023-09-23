@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de colunas</title>
+    <link
+    rel="stylesheet"
+    href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+  />
+</head>
+
+<style>
+    .row{
+        height:150px;
+        background-color: rgb(21, 37, 99);
+    }
+
+    .col-3{
+        background-color: antiquewhite;
+        padding: 20px;
+        border: solid 1px black;
+    }
+
+</style>
+<body>
+    <!-- div.container>div.row>div.col-3{Coluna $}*3  Abreviação container abaixo-->
+    <div class="container">
+        <div class="row">
+            <div class="col-3 align-self-start">Coluna 1</div>
+            <div class="col-3 align-self-center">Coluna 2</div>
+            <div class="col-3 align-self-end">Coluna 3</div>
+        </div>
+    </div>
+    <br/>
+    <div class="container ">
+        <div class="row justify-content-evenly">
+            <div class="col-3 ">Coluna 1</div>
+            <div class="w-100"></div>
+            <div class="col-3 ">Coluna 2</div>
+            <div class="col-3 ">Coluna 3</div>
+        </div>
+    </div>
+    <br/>
+    <!-- ordenação fir ou enumerando 1  -->
+    <div class="container ">
+        <div class="row justify-content-evenly">
+            <div class="col-3  order-first">Coluna 3</div>
+            <div class="col-3 order-two">Coluna 2</div>
+            <div class="col-3 order-3">Coluna 1</div>
+        </div>
+    </div>
+   
+    <!-- ordenação fir ou enumerando 1  -->
+    <br/>
+    <div class="container ">
+        <div class="row justify-content-evenly">
+            <div class="col-3 mx-auto ">Div 1</div>
+            <!-- <div class="col-3  ms-auto">Div 2 </div> -->
+           <!--  <div class="col-3 ">Div 3</div> -->
+        </div>
+    </div>
+    <br>
+
+    <div class="container ">
+           <!--  Não fica em linha porque não tem row e cada col-3 possui 25% de seu tamanho total-->
+            <div class="col-3">Div 1</div>
+            <div class="col-3">Div 2 </div>
+      
+    </div>
+        
+    
+</body>
+</html>

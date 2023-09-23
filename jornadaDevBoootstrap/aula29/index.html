@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+        <title>Alert</title>
+        <title>Carousseo de Slides</title>
+    </head>
+
+    <body>
+        <div class="container py-5">
+            <!-- Todos nos atributos da animação -->
+            <!-- Animação de deslisamento padrao ou esmaecimento com fade -->
+            <!-- data-bs-touch="false" esse atributo remove o touch no slide -->
+            <!-- carousel-dark deixa os elmentos nas cores escuras -->
+            <div class="carousel slide carousel-fade" id="ads" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button
+                    class="active"
+                    data-bs-target="#ads"
+                    data-bs-slide-to="0">
+                </button>
+                <button
+                class=""
+                data-bs-target="#ads"
+                data-bs-slide-to="1">
+            </button>
+            <button
+            class=""
+            data-bs-target="#ads"
+            data-bs-slide-to="2">
+        </button>
+    </div>
+    <div class="carousel-inner">
+        
+        <div class="carousel">
+                        <!-- Também é possivel adcionar intervalos nos slides -->
+                        <div class="carousel-item active "data-bs-interval="3000">
+                            <img
+                                src="https://picsum.photos/1280/420?random=1"
+                                alt
+                                class="d-block w-100" />
+                                <div class="carousel-caption d-none d-md-block ">
+                                    <h5>Título do slide</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quod iure tenetur magni amet deserunt quos debitis fugit, quia mollitia ab quam ex rem numquam vel eum eius, deleniti veniam.</p>
+                                </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel">
+                        <div class="carousel-item"data-bs-interval="1000">
+                            <img
+                                src="https://picsum.photos/1280/420?random=2"
+                                alt
+                                class="d-block w-100" />
+                        </div>
+                    </div>
+                    <div class="carousel-item"data-bs-interval="1000">
+                        <img
+                            src="https://picsum.photos/1280/420?random=3"
+                            alt
+                            class="d-block w-100" />
+                    </div>
+                </div>
+                <div>
+                <button
+                    class="carousel-control-prev"
+                    data-bs-target="#ads"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button 
+                    class="carousel-control-next"
+                    data-bs-target="#ads"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>

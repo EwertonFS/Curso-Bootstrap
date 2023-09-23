@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <title>Alert,badge,</title>
+</head>
+
+<style>
+  .lis-group-item.list-group-item-action {
+    text-decoration: none;
+  }
+</style>
+
+<body>
+  <div class="container py-5">
+    <div class="alert alert-danger fade show">
+      <h4 class="alert-header"><i class="bi-info-circle"></i>Informação</h4>
+      <p>Este é Um alerta</p>
+      <!--  button.btn-close[data-bs-dismiss="alert"] -->
+      <button class="btn-close" data-bs-dismiss="alert"></button>
+      <a href="" class="alert-link">Clique Aqui</a>
+    </div>
+
+    <hr />
+    <h2>
+      exemplo de texto em capsula<span class="badge bg-secondary">novo</span>
+    </h2>
+    <button class="btn btn-primary btn-lg position-relative">
+      notificações<span
+        class="badge text-bg-danger position-absolute top-0 start-100 translate-middle rounded-pill">5</span>
+    </button>
+    <button class="btn btn-primary btn-lg position-relative ms-4">
+      notificações<span
+        class="badge text-bg-danger position-absolute top-0 start-100 translate-middle rounded-circle p-2 border border-light">
+      </span>
+      <!--  é necessário o espaçõ no span  -->
+    </button>
+    <hr />
+    <!-- div.list-group>li.list-group-item{item$}*5 -->
+    <!--   <div class="list-group">
+      <li class="list-group-item active">item1</li>
+      <li class="list-group-item">item2</li>
+      <li class="list-group-item">item3</li>
+      <li class="list-group-item disabled">item4</li>
+      <li class="list-group-item">item5</li>
+    </div> -->
+    <hr />
+    <!-- div.list-group>a.list-group-item.list-group-item-action[href="#"]{link $}*5 -->
+    <!--    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action">link 1</a><a href="#"
+        class="list-group-item list-group-item-action">link 2</a><a href="#"
+        class="list-group-item list-group-item-action">link 3</a><a href="#"
+        class="list-group-item list-group-item-action">link 4</a><a href="#"
+        class="list-group-item list-group-item-action">link 5</a>
+    </div>
+  </div>
+  <hr /> -->
+    <!-- div.list-group>button.list-group-item.list-group-item-action{Botão $}*5 -->
+    <!--  <div class="list-group">
+    <button class="list-group-item list-group-item-action">Botão 1</button><button
+      class="list-group-item list-group-item-action">Botão 2</button><button
+      class="list-group-item list-group-item-action">Botão 3</button><button
+      class="list-group-item list-group-item-action">Botão 4</button><button
+      class="list-group-item list-group-item-action">Botão 5</button>
+  </div>
+  <hr>
+  <ol class="list-group list-group-numbered">
+    <li class="list-group-item">Item 1</li>
+    <li class="list-group-item">Item 2</li>
+    <li class="list-group-item">Item 3</li>
+    <li class="list-group-item">Item 4</li>
+    <li class="list-group-item">Item 5</li>
+  </ol> -->
+
+
+    <div class="list-group">
+      <p class="d-flex justify-content-center align-items-center text-bg-danger text-center">Aqui Poderia ser Noticias</p>
+      <!-- a.lis-group-item.list-group-item-action -->
+      <a href="" class="lis-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Título de Notícia</h5>
+          <small>Texto de 5dias atrás</small>
+        </div>
+        <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quis nulla exercitationem
+          officia assumenda in quia doloribus voluptatibus a veritatis.
+        </p>
+        <small class="Text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, pariatur.</small>
+      </a>
+      <hr>
+      <a href="" class="lis-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Título de Notícia</h5>
+          <small>Texto de 5dias atrás</small>
+        </div>
+        <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quis nulla exercitationem
+          officia assumenda in quia doloribus voluptatibus a veritatis.
+        </p>
+        <small class="Text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, pariatur.</small>
+      </a>
+      <hr>
+      <a href="" class="lis-group-item list-group-item-action list-group-item-warning">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Título de Notícia</h5>
+          <small>Texto de 5dias atrás</small>
+        </div>
+        <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quis nulla exercitationem
+          officia assumenda in quia doloribus voluptatibus a veritatis.
+        </p>
+        <small class="Text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, pariatur.</small>
+      </a>
+      <hr>
+      <a href="" class="lis-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">Título de Notícia</h5>
+          <small>Texto de 5dias atrás</small>
+        </div>
+        <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quis nulla exercitationem
+          officia assumenda in quia doloribus voluptatibus a veritatis.
+        </p>
+        <small class="Text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, pariatur.</small>
+      </a>
+      <hr>
+    </div>
+
+</body>
+
+</html>

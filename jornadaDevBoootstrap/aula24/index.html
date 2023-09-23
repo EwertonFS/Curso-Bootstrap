@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+  />
+    <title>Formualrio</title>
+</head>
+<body>
+    
+    <h1 class="display-3">Endereço</h1>
+    <hr />
+    <!-- novalidate = esta desativando validacvao normal e o needs validando bootstrap -->
+    <form method="post" class="needs-validation" novalidate>
+      <div class="row mb-3 g-2">
+        <!--   div.col-7>label.form-label[for="logradouro"]{Logradouro}+input.form-control#logradouro -->
+        <div class="col-7">
+          <label for="logradouro" class="form-label">Logradouro</label>
+          <input type="text" class="form-control" id="logradouro"  required />
+          <div class="invalid-feedback">
+              Você deve informar logradouro.
+          </div>
+          <div class="valid-feedback">
+             Informado corretamente.
+        </div>
+          
+        </div>
+        <div class="col-2">
+          <label for="numero" class="form-label">numero</label>
+          <input type="text" class="form-control" id="numero" />
+        </div>
+
+        <div class="col-2">
+          <label for="complemento" class="form-label">complemento</label>
+          <input type="text" class="form-control" id="complemento" />
+        </div>
+
+        <div class="col-6">
+          <label for="bairro" class="form-label">bairro</label>
+           <input type="text" class="form-control" id="bairro">
+      </div>
+
+      <div class="col-6">
+          <label for="cidade" class="form-label">cidade</label>
+           <input type="text" class="form-control" id="cidade">
+      </div>
+
+      <div class="col-6">
+          <label for="estado" class="form-label">estado</label>
+           <input type="text" class="form-control" id="estado">
+      </div>
+      <div class="col-4">
+          <label for="cep" class="form-label">cep</label>
+           <input type="text" class="form-control" id="cep" pattern="[0-9]{8}" required/>
+      </div>
+      <div class="col-12">
+          <input type="checkbox" class="form-check-input" id="termos" value="" >
+          <label for="termos" class="form-check-label">Concordo  com os termos e condições</label>
+    </div>
+    </div>
+      
+      <button class="btn btn-primary">Cadastrar</button>
+
+    </form>
+    <hr>
+   <!--  Exemplo validação no server! -->
+
+    <form method="post" >
+        <div class="row mb-3 g-2">
+          <!--   div.col-7>label.form-label[for="logradouro"]{Logradouro}+input.form-control#logradouro -->
+          <!-- reposta positiva servidor -->
+          <div class="col-7">
+            <label for="logradouro" class="form-label">Logradouro</label>
+            <input type="text" class="form-control is-valid" id="logradouro"  required />
+            <div class="invalid-feedback">
+                Você deve informar logradouro.
+            </div>
+            <div class="valid-feedback">
+               Informado corretamente.
+          </div>
+            
+          </div>
+          <div class="col-2">
+            <label for="numero" class="form-label">numero</label>
+            <input type="text" class="form-control" id="numero" />
+          </div>
+  
+          <div class="col-2">
+            <label for="complemento" class="form-label">complemento</label>
+            <input type="text" class="form-control" id="complemento" />
+          </div>
+  
+          <div class="col-6">
+            <label for="bairro" class="form-label">bairro</label>
+             <input type="text" class="form-control" id="bairro">
+        </div>
+  
+        <div class="col-6">
+            <label for="cidade" class="form-label">cidade</label>
+             <input type="text" class="form-control" id="cidade">
+        </div>
+  
+        <div class="col-6">
+            <label for="estado" class="form-label">estado</label>
+             <input type="text" class="form-control" id="estado">
+        </div>
+       <!--  Atributon IsInvalid  resposta negativa servidor -->
+        <div class="col-4">
+            <label for="cep" class="form-label">cep</label>
+            <input type="text" class="form-control is-invalid" id="cep" pattern="[0-9]{8}"  required/>
+            <div class="invalid-feedback">
+                Você deve informar logradouro.
+            </div>
+            <div class="valid-feedback">
+               Informado corretamente.
+          </div>
+        </div>
+        <div class="col-12">
+            <input type="checkbox" class="form-check-input " id="termos" value="" >
+            <label for="termos" class="form-check-label">Concordo  com os termos e condições</label>
+      </div>
+      </div>
+        
+        <button class="btn btn-success">Cadastrar</button>
+  
+      </form>
+    <!-- excript necessario para exemplo 1  encontrado no validation do bootstrap-->
+    <script>
+        (() => {
+        'use strict'
+
+
+  const forms = document.querySelectorAll('.needs-validation')
+
+
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+    </script>
+</body>
+</html>

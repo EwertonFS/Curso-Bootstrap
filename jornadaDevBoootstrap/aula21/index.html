@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+  />
+    <title>Campos com Títulos Flutuantes</title>
+</head>
+<body>
+    <div class="container p-5 ">
+        <!--o Emmer=> div.container>div>input:email#email+label[form=email]{E-mail} -->
+
+      <!--   placeholder vazio para deixar flutuante junto com form floating -->
+        <div class="form-floating mb-3">
+            <input type="email" name="" id="email" class="form-control" placeholder=" ">
+            <label for="email" form="form-label">E-mail</label>
+        </div>
+
+        <div class="form-floating">
+            <input type="password" name="" id="senha" class="form-control" placeholder=" ">
+            <label for="senha" form="form-label">senha</label>
+        </div>
+        <hr>
+        
+         <!-- Se houver espaço no text area nao funcionara -->
+        <div class="form-floating">
+            <textarea name="" id="msg" class="form-control"
+            style ="height:100px" placeholder=" "> </textarea>
+            <label for="msg">Mensagem</label>
+        </div>
+
+
+        <div class="form-floating">
+            <textarea name="" id="msg" class="form-control" style="height:100px" placeholder=" "></textarea>
+            <label for="msg">Mensagem</label>
+        </div>
+        
+               
+      
+
+
+
+        
+
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+        <title>Painéid Deslizantes</title>
+    </head>
+    <body>
+        <nav class="navbar bg-dark navbar-dark">
+            <div class="container">
+                <a href class="navbar-brand">OffCanvas</a>
+                <div>
+                    <button class="btn btn-primary"         data-bs-toggle="offcanvas"
+                        data-bs-target="#painel">
+                        Painel
+                    </button>
+                    <a href="#painel" class="btn btn-success" data-bs-toggle="offcanvas">Painel</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At optio soluta natus quisquam similique ducimus, vero sequi? Aut tempora laudantium aperiam molestiae natus consequuntur cum modi temporibus, totam adipisci delectus iure reprehenderit earum eveniet repellendus assumenda! Id dolore, fuga natus officia itaque quas, voluptas ab tempora quae voluptate voluptates velit illo dignissimos! At neque laboriosam vitae tempore nam ex ratione corrupti assumenda sint, totam quae accusamus libero velit incidunt reprehenderit possimus? Quas assumenda sunt enim laudantium ullam facere iusto asperiores voluptatibus blanditiis repellat adipisci totam minus iure temporibus, similique recusandae, suscipit ad consequatur velit fugit. Accusantium commodi praesentium earum explicabo quod sed temporibus officia fuga quasi dignissimos velit cumque dolores at, fugit reprehenderit maiores impedit! Perferendis facere aut nostrum dignissimos nulla. Ullam voluptates facere quibusdam fugit dignissimos? Quod, eaque fuga quas excepturi, adipisci cum impedit quasi aliquam perferendis nesciunt quae magnam odit inventore amet voluptatem similique eveniet vero non ipsa!</p>
+            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At optio soluta natus quisquam similique ducimus, vero sequi? Aut tempora laudantium aperiam molestiae natus consequuntur cum modi temporibus, totam adipisci delectus iure reprehenderit earum eveniet repellendus assumenda! Id dolore, fuga natus officia itaque quas, voluptas ab tempora quae voluptate voluptates velit illo dignissimos! At neque laboriosam vitae tempore nam ex ratione corrupti assumenda sint, totam quae accusamus libero velit incidunt reprehenderit possimus? Quas assumenda sunt enim laudantium ullam facere iusto asperiores voluptatibus blanditiis repellat adipisci totam minus iure temporibus, similique recusandae, suscipit ad consequatur velit fugit. Accusantium commodi praesentium earum explicabo quod sed temporibus officia fuga quasi dignissimos velit cumque dolores at, fugit reprehenderit maiores impedit! Perferendis facere aut nostrum dignissimos nulla. Ullam voluptates facere quibusdam fugit dignissimos? Quod, eaque fuga quas excepturi, adipisci cum impedit quasi aliquam perferendis nesciunt quae magnam odit inventore amet voluptatem similique eveniet vero non ipsa!</p>
+            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At optio soluta natus quisquam similique ducimus, vero sequi? Aut tempora laudantium aperiam molestiae natus consequuntur cum modi temporibus, totam adipisci delectus iure reprehenderit earum eveniet repellendus assumenda! Id dolore, fuga natus officia itaque quas, voluptas ab tempora quae voluptate voluptates velit illo dignissimos! At neque laboriosam vitae tempore nam ex ratione corrupti assumenda sint, totam quae accusamus libero velit incidunt reprehenderit possimus? Quas assumenda sunt enim laudantium ullam facere iusto asperiores voluptatibus blanditiis repellat adipisci totam minus iure temporibus, similique recusandae, suscipit ad consequatur velit fugit. Accusantium commodi praesentium earum explicabo quod sed temporibus officia fuga quasi dignissimos velit cumque dolores at, fugit reprehenderit maiores impedit! Perferendis facere aut nostrum dignissimos nulla. Ullam voluptates facere quibusdam fugit dignissimos? Quod, eaque fuga quas excepturi, adipisci cum impedit quasi aliquam perferendis nesciunt quae magnam odit inventore amet voluptatem similique eveniet vero non ipsa!</p>
+            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At optio soluta natus quisquam similique ducimus, vero sequi? Aut tempora laudantium aperiam molestiae natus consequuntur cum modi temporibus, totam adipisci delectus iure reprehenderit earum eveniet repellendus assumenda! Id dolore, fuga natus officia itaque quas, voluptas ab tempora quae voluptate voluptates velit illo dignissimos! At neque laboriosam vitae tempore nam ex ratione corrupti assumenda sint, totam quae accusamus libero velit incidunt reprehenderit possimus? Quas assumenda sunt enim laudantium ullam facere iusto asperiores voluptatibus blanditiis repellat adipisci totam minus iure temporibus, similique recusandae, suscipit ad consequatur velit fugit. Accusantium commodi praesentium earum explicabo quod sed temporibus officia fuga quasi dignissimos velit cumque dolores at, fugit reprehenderit maiores impedit! Perferendis facere aut nostrum dignissimos nulla. Ullam voluptates facere quibusdam fugit dignissimos? Quod, eaque fuga quas excepturi, adipisci cum impedit quasi aliquam perferendis nesciunt quae magnam odit inventore amet voluptatem similique eveniet vero non ipsa!</p>
+        </div>
+        <!-- div.offfcanvas.offcanvas-start.show#painel[tabindex=-1] -->
+        <!-- ao remover a classe show abaixo ele não inicia mostrando -->
+      <!--   é possivel alterar o sentido do offcanvas para end,bottom , top
+      remover o scrol na backdrop
+     data-bs-background=false remove o fundo escurecido
+    data-bs-background=static o painel nao fecha se clicar no backdrop
+    Para aumentar a largura do utiliztario  basta atribuir uma tag style="--bs-offcanvas-width:600px"
+-->
+        <div
+         class="offcanvas offcanvas-start  text-bg-info"
+         id="painel" tabindex="-1"
+         data-bs-scroll="true" 
+         data-bs-backdrop="static"
+         style="--bs-offcanvas-width:600px">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Painel</h5>
+                <button class="btn btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <!--  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, obcaecati.</p> -->
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <title>Barra de Navegação</title>
+  </head>
+
+  <body>
+    <!-- nav-bar-expand sm  vai mostrar os menis/**/ -->
+    <nav class="navbar bg-dark  navbar-dark navbar-expand-sm py-3">
+      <div class="container-fluid d-flex align-items-center">
+        <a href="#" class="navbar-brand">
+          <i class="bi-bootstrap-fill fs-1 me-2">Bootstrap5</i>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuNavbar"
+        >
+          <!--  Icone Hamburguer -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--  <span class="navbar-text ">CursoCompl</span> -->
+        <!-- div.collapse.navbar-collapse>div.navbar-nav>a.nac-link{Menu $}[href="#4"]*4 -->
+        <div class="collapse navbar-collapse" id="menuNavbar">
+          <div class="navbar-nav ms-auto">
+            <a href="#" class="nav-link active">Principal</a>
+            <div class="dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+              >
+                Produtos</a
+              >
+
+              <!--  ul.dropdown-menu>(li>a.dropdown-item[href="#"]{Produto $})*5    -->
+              <ul class="dropdown-menu dropdown-menu-end ">
+                <li><a href="#" class="dropdown-item">Produto 1</a></li>
+                <li><a href="#" class="dropdown-item">Produto 2</a></li>
+                <li><a href="#" class="dropdown-item">Produto 3</a></li>
+                <li><a href="#" class="dropdown-item">Produto 4</a></li>
+                <li><a href="#" class="dropdown-item">Produto 5</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Aqui estava o menu buscar  -->
+
+        <!--  form.d-flex>div.input-group>(input:search.form-control.me-2[placeholder="Buscar..."])+button:submit.btn.btn-outline-success{buscar} -->
+       <!-- 
+        <form action class="d-flex">
+          <div class="input-group">
+            <input
+              type="search"
+              name
+              id
+              class="form-control"
+              placeholder="Buscar..."
+            />
+            <button type="submit" class="btn btn-outline-success">
+              buscar
+            </button>
+          </div>
+        </form> -->
+      </div>
+    </nav>
+    <div class="container-fluid mt-3 m-0 p-0 sticky-top">
+        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet suscipit excepturi quibusdam sed quae vero, enim est nostrum blanditiis, atque labore aut adipisci animi omnis corrupti perferendis exercitationem culpa repellendus. Quam sed quibusdam repudiandae inventore distinctio ullam, fugiat in, voluptates cupiditate cumque sint libero atque molestias at assumenda obcaecati sequi natus perspiciatis eligendi! Dolorum, odit est rerum, soluta provident voluptatem esse perspiciatis blanditiis non ipsum obcaecati excepturi facere dolore voluptatum fugiat quidem laudantium, aliquam beatae sed iure similique molestias ducimus iste! Reprehenderit, aperiam perferendis. Laboriosam, sapiente eaque beatae atque quae deleniti nostrum fugiat, itaque vitae, unde error recusandae tempore quasi.
+        </p>
+        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet suscipit excepturi quibusdam sed quae vero, enim est nostrum blanditiis, atque labore aut adipisci animi omnis corrupti perferendis exercitationem culpa repellendus. Quam sed quibusdam repudiandae inventore distinctio ullam, fugiat in, voluptates cupiditate cumque sint libero atque molestias at assumenda obcaecati sequi natus perspiciatis eligendi! Dolorum, odit est rerum, soluta provident voluptatem esse perspiciatis blanditiis non ipsum obcaecati excepturi facere dolore voluptatum fugiat quidem laudantium, aliquam beatae sed iure similique molestias ducimus iste! Reprehenderit, aperiam perferendis. Laboriosam, sapiente eaque beatae atque quae deleniti nostrum fugiat, itaque vitae, unde error recusandae tempore quasi.
+        </p>
+        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet suscipit excepturi quibusdam sed quae vero, enim est nostrum blanditiis, atque labore aut adipisci animi omnis corrupti perferendis exercitationem culpa repellendus. Quam sed quibusdam repudiandae inventore distinctio ullam, fugiat in, voluptates cupiditate cumque sint libero atque molestias at assumenda obcaecati sequi natus perspiciatis eligendi! Dolorum, odit est rerum, soluta provident voluptatem esse perspiciatis blanditiis non ipsum obcaecati excepturi facere dolore voluptatum fugiat quidem laudantium, aliquam beatae sed iure similique molestias ducimus iste! Reprehenderit, aperiam perferendis. Laboriosam, sapiente eaque beatae atque quae deleniti nostrum fugiat, itaque vitae, unde error recusandae tempore quasi.
+        </p>
+        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet suscipit excepturi quibusdam sed quae vero, enim est nostrum blanditiis, atque labore aut adipisci animi omnis corrupti perferendis exercitationem culpa repellendus. Quam sed quibusdam repudiandae inventore distinctio ullam, fugiat in, voluptates cupiditate cumque sint libero atque molestias at assumenda obcaecati sequi natus perspiciatis eligendi! Dolorum, odit est rerum, soluta provident voluptatem esse perspiciatis blanditiis non ipsum obcaecati excepturi facere dolore voluptatum fugiat quidem laudantium, aliquam beatae sed iure similique molestias ducimus iste! Reprehenderit, aperiam perferendis. Laboriosam, sapiente eaque beatae atque quae deleniti nostrum fugiat, itaque vitae, unde error recusandae tempore quasi.
+        </p>
+
+        <!-- Quando o conteudo for menor e subir basta utilizar o fixed-bottom
+        e colocar um div com divisibilidade oculta-->
+
+
+        <footer class="p-4 bg-dark text-light text-center sticky-bottom">
+            Todos dos Direitos Reservados
+          </footer>
+          
+
+
+
+
+
+  </body>
+</html>

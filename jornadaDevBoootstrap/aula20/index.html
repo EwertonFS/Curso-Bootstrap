@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <title>Campos de Checagem</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="mb-3">
+        <input type="checkbox" id="novo" class="form-check-input" disabled />
+        <label for="novo" class="form-check-label">Produto Novo</label>
+      </div>
+      <hr />
+      <div class="mb-3">
+        <input type="radio" id="novo" class="form-check-input" />
+        <label for="novo" class="form-check-label">Check-box-Radio</label>
+      </div>
+      <hr />
+      <div class="mb-3 form-check form-check-inline">
+        <input
+          type="radio"
+          id="novo"
+          name="estado"
+          value="n"
+          class="form-check-input"
+        />
+        <label for="novo" class="form-check-label">Produto Novo</label>
+      </div>
+      <div class="mb-3 form-check form-check-inline">
+        <input
+          type="radio"
+          id="novo"
+          name="estado"
+          value="u"
+          class="form-check-input"
+        />
+        <label for="novo" class="form-check-label">Produto Usado</label>
+      </div>
+      <div class="mb-3 form-check form-check-reverse">
+        <input
+          type="radio"
+          id="novo"
+          name="estado"
+          value="n"
+          class="form-check-input"
+        />
+        <label for="novo" class="form-check-label">Produto Novo</label>
+      </div>
+      <div class="mb-3 form-check form-check-reverse">
+        <input
+          type="radio"
+          id="novo"
+          name="estado"
+          value="u"
+          class="form-check-input"
+        />
+        <label for="novo" class="form-check-label">Produto Usado</label>
+      </div>
+      <hr />
+      <div class="mb-3 form-switch">
+        <input type="checkbox" class="form-check-input" />
+        <label for="novo" class="form-check-label">Sim ou Não</label>
+      </div>
+
+      <!-- Botão no Input -->
+      <div class="mb-3">
+        <input type="checkbox" name="" id="entrega" class="btn-check" />
+        <label for="entrega" class="btn btn-outline-primary">Entrega</label>
+      </div>
+
+      <hr />
+
+      <!-- Outra OPção para campos de checkagem Mutualmente exclusivo -->
+
+      <div class="mb-3">
+        <input
+          type="radio"
+          name="tipoEntrega"
+          id="entregarapida"
+          class="btn-check"
+        />
+        <label for="entregarapida" class="btn btn-outline-success"
+          >Entrega Rápida</label
+        >
+      </div>
+
+      <div class="mb-3">
+        <input
+          type="radio"
+          name="tipoEntrega"
+          id="entregaLenta"
+          class="btn-check"
+        />
+        <label for="entregaLenta" class="btn btn-outline-danger"
+          >Entrega Lenta</label
+        >
+      </div>
+    </div>
+  </body>
+</html>
